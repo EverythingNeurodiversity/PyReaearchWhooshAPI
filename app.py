@@ -1,6 +1,7 @@
 from flask import Flask, request
 from whoosh.index import create_in, open_dir
 from whoosh.qparser import QueryParser
+import txt_to_whoosh.py 
 
 app = Flask(__name__)
 ix = open_dir("indexdir")
